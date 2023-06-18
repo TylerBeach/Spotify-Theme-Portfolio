@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <!-- LEFT MENU THINGS  -->
+    <div class="left-menu">
+
+        <!-- HOME + SEARCH -->
+        <div class="top-container">
+            <div onclick="returnHome()" class="home">
+                <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6158155fd68240aa253e5aaa_home-grey.svg">
+                <h3> Home </h3>
+            </div>
+            <div class="search">
+                <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/615816f64a22b3c288db820a_search-interface-symbol.svg">
+                <h3> Search </h3>
+            </div>
+        </div>
+
+        <!-- BOTTOM LEFT CONTAINER -->
+        <div class="bottom-container">
+            <h1>Tyler's Library</h1>
+            <div class="history">
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>About Me</h2>
+                </div>
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>Resume</h2>
+                </div>
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>LinkedIn</h2>
+                </div>
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>Github</h2>
+                </div>
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>Email</h2>
+                </div>
+                <div>
+                    <img src="Images/profile.jpeg">
+                    <h2>Education</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ABOUT ME CONTAINER-->
+    <div id="about-me-container" class="about-me">
+        <div class="right-menu">
+
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Tyler</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/profile.jpeg">
+                <div class="image-and-title-text">
+                    <h1>About Me</h1>
+                    <h3>Smaller Text</h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h2>Heading Here</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT ME CONTAINER -->
+    <div id="contact-me-container" class="contact-me">
+        <div class="right-menu">
+
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+    
+                    <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Tyler</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <!-- <div class="banner">
+                <img src="Images/froggy-banner-3.jpeg">
+            </div> -->
+
+            <!-- Title -->
+            <div class="image-and-title">
+                <img src="Images/profile.jpeg">
+                <div class="image-and-title-text">
+                    <h1>Contact Me</h1>
+                    <h3>Smaller Text</h3>
+                </div>
+            </div>
+            
+            <!-- Text Area -->
+            <div class="about-me-info">
+                <h2>Heading</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- HOME SCREEN CONTAINER -->
+    <div id="home-container" class="main-container">
+
+        <div class="right-menu">
+            
+            <!-- Header -->
+            <div class="header">
+                <div class="forward-backward">
+                    <div onclick="returnHome()">
+                        <button><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                    </div>
+                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                </div>
+                <div class="profile">
+                    <img>
+                    <h2>Tyler</h2>
+                    <button> ^ </button>
+                </div>
+            </div>
+            
+            <!-- <div class="welcome">
+                <h1>Welcome to my Portfolio</h1>
+
+            </div> -->
+
+
+            <!-- Banner -->
+            <div class="banner">
+                <div class="banner-img">
+                    <h1 class="banner-text">Welcome to my portfolio.</h1>
+                </div>
+                <!-- <img src="Images/spotify-ad.png"> -->
+            </div>
+            
+            <!-- Greeting Message -->
+            <h1 id="greeting-message" class="greeting-message" ></h1>
+            
+            <!-- First Playlist Section -->
+            <div id="playlist-container" class="playlist-container">
+                <div class="playlist" onclick="HidingContainers('about-me-container');">
+                    <img src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1>About Me</h1>    
+                    </div>
+                </div>
+                <div class="playlist">
+                    <img id="playlist-two-image" src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1 id="playlist-two-text" >Something Here</h1>    
+                    </div>
+                </div>
+                <div class="playlist" onclick="HidingContainers('contact-me-container');">
+                    <img id="playlist-three-image" src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1 id="playlist-three-text">Contact Me</h1>    
+                    </div>
+                </div>
+                <div class="playlist">
+                    <img id="playlist-four-image" src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1 id="playlist-four-text">Something Here</h1>    
+                    </div>
+                </div>
+                <div class="playlist">
+                    <img id="playlist-five-image" src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1 id="playlist-five-text">Something Here</h1>    
+                    </div>
+                </div>
+                <div class="playlist">
+                    <img id="playlist-six-image" src="Images/profile.jpeg">
+                    <div class="playlist-name">
+                        <h1 id="playlist-six-text" >Something Here</h1>    
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lower Section Title -->
+            <h1 class="tech-tools-title">Tools and Tech</h1>
+            
+            <!-- Tools and Tech -->
+            <div class="genre-container">
+                
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <h2>Javascript</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    <h2>Python</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                    <h2>CSS</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <h2>HTML</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                    <h2>C</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" />
+                    <h2>R</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <h2>React</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <h2>Bootstrap</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <h2> Nodejs</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="Images/github_files/github-original.svg"/>
+                    <h2>Github</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                    <h2>Git</h2>
+                    
+                </div>
+                <div class="genre">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                    <h2>Vscode</h2>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- ALL FOOTER THINGS -->
+    <footer class="footer">
+
+        <!-- CURRENT SONG IMG/TEXT -->
+        <div class="current-song">
+            <img class="current-album" src="Images/profile.jpeg">
+            <div class="song-info">
+                <h2> Personal Portfolio - Spotify Version </h2>
+                <h3> Tyler Beach</h3>
+            </div>
+            <img onclick="heartCheckbox()" id="grey-heart" class="grey-heart" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6157946790f93e5264dd3dc9_heart-grey.svg">
+            <img onclick="heartCheckbox()" id="red-heart" class="red-heart" src="Images/green-heart.png">
+        </div>
+
+        <!-- PLAY PAUSE BUTTONS -->
+        <div class="controls">
+            <div class="buttons">
+                <img class="shuffle" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/61578cb0dbb47a168c319bb4_shuffle-2.svg"></img>
+                <img class="backward" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/61578bad93bb55d3279ca0bb_play-next-button.svg"></img>
+                <div class="play-button">
+                    <img class="play" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6156e5b396ff85e4631872ca_play-button.svg"></img>
+                </div>
+                <img class="forward" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/61578bad93bb55d3279ca0bb_play-next-button.svg"></img>
+                <img class="loop" src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/61578d2ef9cd716c959582b8_repeat-2.svg"></img>
+            </div>
+            <div class="song-progress">
+                <!-- <input class="song-progress" type="range"> -->
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE VOLUME SLIDER -->
+        <div class="volume-div">
+            <div class="volume"></div>
+            <div class="volume-button"></div>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
