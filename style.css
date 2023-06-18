@@ -20,6 +20,10 @@
     font-family: RegularSpotify;
 }
 
+*::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     /* background-color: rgb(56, 55, 55); */
     background-color: #000000;
@@ -400,9 +404,11 @@ LEFT UI
     /* padding-top: 1rem; */
     column-gap: 1rem;
     row-gap: 0rem;
-    overflow: scroll;
+    overflow: auto;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
     scrollbar-color: #121212 #212121;
-    scrollbar-width: thin;
+    scrollbar-width: 0px;
     white-space: nowrap;
     height: 195px;
     width: auto;
