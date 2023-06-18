@@ -184,3 +184,28 @@ function HidingContainers(chosenContainerID) {
 
 
 document.getElementById("backward-button").addEventListener("click", returnHome());
+
+
+function contactMenu() {
+    var contactsDiv = document.getElementById("contact-menu");
+    var spotifyDiv = document.getElementById("spotify-menu");
+    
+    if (contactsDiv.style.display == "none") {
+        contactsDiv.style.display = "flex";
+        // spotifyDiv.style.display = "none";
+    } else {
+        contactsDiv.style.display = "none";
+    }
+}    
+
+function spotifyMenu() {
+    var contactsDiv = document.getElementById("contact-menu");
+    var spotifyDiv = document.getElementById("spotify-menu");
+
+    if (spotifyDiv.style.display == "none") {
+        spotifyDiv.style.display = "block";
+        // contactsDiv.style.display = "none";
+    } else {
+        spotifyDiv.style.display = "none";
+    }
+}   

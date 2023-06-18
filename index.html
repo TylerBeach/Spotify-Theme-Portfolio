@@ -10,87 +10,16 @@
 </head>
 <body>
 
-    <!-- LEFT MENU THINGS  -->
-    <div class="left-menu">
-        
-        <!-- HOME + SEARCH -->
-        <!-- <div class="left-menu-container"> -->
-
-            <div class="top-container">
-                <div onclick="returnHome()" class="home">
-                    <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6158155fd68240aa253e5aaa_home-grey.svg">
-                    <h3> Home </h3>
-                </div>
-                <div class="search">
-                    <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/615816f64a22b3c288db820a_search-interface-symbol.svg">
-                    <h3> Search </h3>
-                </div>
-            </div>
-
-            <!-- BOTTOM LEFT CONTAINER -->
-
-        <div class="left-menu-container">
-
-            <div class="bottom-container">
-                <h1>Tyler's Library</h1>
-                <div class="history">
-                    <div>
-                        <img src="Images/linkedin-icon.png">
-                        <h2>LinkedIn</h2>
-                    </div>
-                    <div>
-                        <img src="Images/github-icon-small.png">
-                        <h2>Github</h2>
-                    </div>
-                    <div>
-                        <img src="Images/email-icon.png">
-                        <h2>Email</h2>
-                    </div>
-                    <div>
-                        <img src="Images/resume-icon.png">
-                        <h2>Resume</h2>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- SPOTIFY CONTAINER -->
-            <div class="spotify-container">
-                <h1>Spotify Playlists</h1>
-                <div class="spotify-playlists">
-                    <a href="https://open.spotify.com/user/impoona?si=f854820847394c6c" target=”_blank”>
-                        <div>
-                            <img src="Images/spotify-logo.png">
-                            <h2>My Spotify</h2>
-                        </div>
-                    </a>
-                    <a href="https://open.spotify.com/playlist/4w9CwgUyxc7bSH8S24draO?si=cd1ba9afc1ed49a7">
-                        <div>
-                            <img src="Images/lofi-icon.png">
-                            <h2>Lofi</h2>
-                        </div>
-                    </a>
-                    <a href="https://open.spotify.com/playlist/5oFsWOtvlWniGlJf99STkw?si=809b3ae3cd70483f"> 
-                        <div>
-                            <img src="Images/chilling-icon.png">
-                            <h2>Chilling</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
+    
+    
     <!-- ABOUT ME CONTAINER-->
     <div id="about-me-container" class="about-me">
         <div class="right-menu">
-
+            
             <!-- Header -->
             <div class="header">
                 <div class="forward-backward">
-    
+                    
                     <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
                     <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
                 </div>
@@ -100,12 +29,12 @@
                     <button> ^ </button>
                 </div>
             </div>
-
+            
             <!-- Banner -->
             <!-- <div class="banner">
                 <img src="Images/froggy-banner-3.jpeg">
             </div> -->
-
+            
             <!-- Title -->
             <div class="image-and-title">
                 <img src="Images/profile.jpeg">
@@ -121,21 +50,20 @@
                 </p>
                 <h2>Heading Here</h2>
             </div>
-
+            
         </div>
-
+        
     </div>
-
-
-
+    
+    
     <!-- CONTACT ME CONTAINER -->
     <div id="contact-me-container" class="contact-me">
         <div class="right-menu">
-
+            
             <!-- Header -->
             <div class="header">
                 <div class="forward-backward">
-    
+                    
                     <button onclick="returnHome()"><img class="backward-button" src="Images/pointing-arrow.png"></button>
                     <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
                 </div>
@@ -145,12 +73,12 @@
                     <button> ^ </button>
                 </div>
             </div>
-
+            
             <!-- Banner -->
             <!-- <div class="banner">
                 <img src="Images/froggy-banner-3.jpeg">
             </div> -->
-
+            
             <!-- Title -->
             <div class="image-and-title">
                 <img src="Images/profile.jpeg">
@@ -166,167 +94,240 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-
+            
         </div>
-
+        
     </div>
     
-
-
-    <!-- HOME SCREEN CONTAINER -->
-    <div id="home-container" class="main-container">
-
-        <div class="right-menu">
+    
+    <!-- LEFT MENU THINGS  -->
+        <div class="left-menu">
             
-            <!-- Header -->
-            <div class="header">
-                <div class="forward-backward">
-                    <div onclick="returnHome()">
-                        <button><img class="backward-button" src="Images/pointing-arrow.png"></button>
+        
+
+                <div class="top-container">
+                    <div class="dropdown">
+                        <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/615816f64a22b3c288db820a_search-interface-symbol.svg">
                     </div>
-                    <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                    <div onclick="returnHome()" class="home">
+                        <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/6158155fd68240aa253e5aaa_home-grey.svg">
+                        <h3> Home </h3>
+                    </div>
+                    <div class="search">
+                        <img src="https://uploads-ssl.webflow.com/6156d79b685c2b652cd52eb9/615816f64a22b3c288db820a_search-interface-symbol.svg">
+                        <h3> Search </h3>
+                    </div>
                 </div>
-                <div class="profile">
-                    <img>
-                    <h2>Tyler</h2>
-                    <button> ^ </button>
+
+                <!-- BOTTOM LEFT CONTAINER -->
+
+                <div class="left-menu-container">
+
+                <div onclick="contactMenu()"class="bottom-container">
+                    <h1>Contact</h1>
+                    <div id="contact-menu" class="history">
+                        <div>
+                            <img src="Images/linkedin-icon.png">
+                            <h2>LinkedIn</h2>
+                        </div>
+                        <div>
+                            <img src="Images/github-icon-small.png">
+                            <h2>Github</h2>
+                        </div>
+                        <div>
+                            <img src="Images/email-icon.png">
+                            <h2>Email</h2>
+                        </div>
+                        <div>
+                            <img src="Images/resume-icon.png">
+                            <h2>Resume</h2>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
 
-            <!-- Banner -->
-            <div class="banner">
-                <div class="banner-img">
-                    <h1 class="banner-text">Welcome to my portfolio.</h1>
-                </div>
-            </div>
-            
-            <!-- Greeting Message -->
-            <h1 id="greeting-message" class="greeting-message" ></h1>
-            
-            <!-- First Playlist Section -->
-            <div id="playlist-container" class="playlist-container">
-                <div class="playlist" onclick="HidingContainers('about-me-container');">
-                    <img src="Images/profile.jpeg">
-                    <div class="playlist-name">
-                        <h1>About Me</h1>    
-                    </div>
-                </div>
-                <div class="playlist">
-                    <img id="playlist-two-image" src="Images/profile.jpeg">
-                    <div class="playlist-name">
-                        <h1 id="playlist-two-text" >Something Here</h1>    
-                    </div>
-                </div>
-                <div class="playlist" onclick="HidingContainers('contact-me-container');">
-                    <img id="playlist-three-image" src="Images/profile.jpeg">
-                    <div class="playlist-name">
-                        <h1 id="playlist-three-text">Contact Me</h1>    
-                    </div>
-                </div>
-            </div>
-
-            <!-- Greeting Message -->
-            <h1 class="greeting-message">Projects</h1>
-            
-            <!-- PROJECTS -->
-            <div id="playlist-container" class="playlist-container">
-                
-                <div class="playlist">
-                    <img id="playlist-four-image" src="Images/FireSafe.png">
-                    <div class="playlist-name">
-                        <h1 id="playlist-four-text">FireSafe</h1>    
-                    </div>
-                </div>
-                <div class="playlist">
-                    <img id="playlist-five-image" src="Images/froggy-jumper-menu.png">
-                    <div class="playlist-name">
-                        <h1 id="playlist-five-text">Froggy Jumper</h1>    
-                    </div>
-                </div>
-                <div class="playlist">
-                    <img id="playlist-six-image" src="Images/website-logo.png">
-                    <div class="playlist-name">
-                        <h1 id="playlist-six-text">Spotify Portfolio</h1>    
+                <!-- SPOTIFY CONTAINER -->
+                <div onclick="spotifyMenu()"class="spotify-container">
+                    <h1>Spotify Playlists</h1>
+                    <div></div>
+                    <div id="spotify-menu" class="spotify-playlists">
+                        <a href="https://open.spotify.com/user/impoona?si=f854820847394c6c" target=”_blank”>
+                            <div>
+                                <img src="Images/spotify-logo.png">
+                                <h2>My Spotify</h2>
+                            </div>
+                        </a>
+                        <a href="https://open.spotify.com/playlist/4w9CwgUyxc7bSH8S24draO?si=cd1ba9afc1ed49a7">
+                            <div>
+                                <img src="Images/lofi-icon.png">
+                                <h2>Lofi</h2>
+                            </div>
+                        </a>
+                        <a href="https://open.spotify.com/playlist/5oFsWOtvlWniGlJf99STkw?si=809b3ae3cd70483f"> 
+                            <div>
+                                <img src="Images/chilling-icon.png">
+                                <h2>Chilling</h2>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <!-- Lower Section Title -->
-            <h1 class="tech-tools-title">Tools and Tech</h1>
-            
-            <!-- Tools and Tech -->
-            <div class="genre-container">
-                
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    <h2>Javascript</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                    <h2>Python</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    <h2>CSS</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    <h2>HTML</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-                    <h2>C</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" />
-                    <h2>R</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-                    <h2>React</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                    <h2>Bootstrap</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                    <h2> Nodejs</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="Images/github_files/github-original.svg"/>
-                    <h2>Github</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-                    <h2>Git</h2>
-                    
-                </div>
-                <div class="genre">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                    <h2>Vscode</h2>
-                    
-                </div>
-            </div>
-            
         </div>
+        
 
-    </div>
+        <!-- HOME SCREEN CONTAINER -->
+        <div id="home-container" class="main-container">
+            
+            <div class="right-menu">
+                
+                <!-- Header -->
+                <div class="header">
+                    <div class="forward-backward">
+                        <div onclick="returnHome()">
+                            <button><img class="backward-button" src="Images/pointing-arrow.png"></button>
+                        </div>
+                        <button><img class="forward-button" src="Images/pointing-arrow.png"></button>
+                    </div>
+                    <div class="profile">
+                        <img>
+                        <h2>Tyler</h2>
+                        <button> ^ </button>
+                    </div>
+                </div>
 
+
+                <!-- Banner -->
+                <div class="banner">
+                    <div class="banner-img">
+                        <h1 class="banner-text">Welcome to my portfolio.</h1>
+                    </div>
+                </div>
+                
+                <!-- Greeting Message -->
+                <h1 id="greeting-message" class="greeting-message" ></h1>
+                
+                <!-- First Playlist Section -->
+                <div id="playlist-container" class="playlist-container">
+                    <div class="playlist" onclick="HidingContainers('about-me-container');">
+                        <img src="Images/profile.jpeg">
+                        <div class="playlist-name">
+                            <h1>About Me</h1>    
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img id="playlist-two-image" src="Images/profile.jpeg">
+                        <div class="playlist-name">
+                            <h1 id="playlist-two-text" >Something Here</h1>    
+                        </div>
+                    </div>
+                    <div class="playlist" onclick="HidingContainers('contact-me-container');">
+                        <img id="playlist-three-image" src="Images/profile.jpeg">
+                        <div class="playlist-name">
+                            <h1 id="playlist-three-text">Contact Me</h1>    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Greeting Message -->
+                <h1 class="greeting-message">Projects</h1>
+                
+                <!-- PROJECTS -->
+                <div id="playlist-container" class="playlist-container">
+                    
+                    <div class="playlist">
+                        <img id="playlist-four-image" src="Images/FireSafe.png">
+                        <div class="playlist-name">
+                            <h1 id="playlist-four-text">FireSafe</h1>    
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img id="playlist-five-image" src="Images/froggy-jumper-menu.png">
+                        <div class="playlist-name">
+                            <h1 id="playlist-five-text">Froggy Jumper</h1>    
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img id="playlist-six-image" src="Images/website-logo.png">
+                        <div class="playlist-name">
+                            <h1 id="playlist-six-text">Spotify Portfolio</h1>    
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Lower Section Title -->
+                <h1 class="tech-tools-title">Tools and Tech</h1>
+                
+                <!-- Tools and Tech -->
+                <div class="genre-container">
+                    
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <h2>Javascript</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                        <h2>Python</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <h2>CSS</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <h2>HTML</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                        <h2>C</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" />
+                        <h2>R</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <h2>React</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                        <h2>Bootstrap</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        <h2> Nodejs</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="Images/github_files/github-original.svg"/>
+                        <h2>Github</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                        <h2>Git</h2>
+                        
+                    </div>
+                    <div class="genre">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                        <h2>Vscode</h2>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
 
 
     <!-- ALL FOOTER THINGS -->
