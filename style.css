@@ -205,7 +205,8 @@ LEFT UI
 .history img {
     width: 50px;
     height: 50px;
-    padding-right: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
 }
 
 .history h2 {
@@ -303,7 +304,15 @@ LEFT UI
     height: 1rem;
 }
 
+
+
+
+
+
 /* BANNER */
+
+
+
 
 
 .banner {
@@ -323,15 +332,43 @@ LEFT UI
     background-position: center;
     width: 80%;
     height: 100%;
+    min-width: 500px;
 }
-.banner-text {
-    /* font-family: ThSpotify; */
-    font-size: 80px;
-    margin-left: 4.5rem;
-    margin-top: 5rem;
-    text-decoration-style: wavy;
-    /* font-weight: 6000; */
 
+
+
+.banner-img h1 {
+    overflow: hidden;
+    /* font-family: ThinSpotify; */
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    margin-left: 4%;
+    padding-top: 4.5rem;
+}
+
+@media (max-width: 1570px) {
+    .banner-img h1 {
+        font-size: 60px;
+        padding-top: 5.5rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .banner-img h1 {
+        font-size: 60px;
+        padding-top: 3rem;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner-img h1 {
+        font-size: 60px;
+        padding-top: 3rem;
+        /* margin: auto; */
+        /* padding: none; */
+    }
 }
 
 .greeting-message {
@@ -658,6 +695,7 @@ MEDIA QUERIES ARE HERE
     .main-container {
         margin-left: 0px;
         padding: 0;
+        margin-bottom: 6rem;
     }
     .banner {
         display: none;
@@ -665,6 +703,8 @@ MEDIA QUERIES ARE HERE
     .header {
         display: none;
     }
+
+
 
     footer {
         /* max-width: 500px; */
