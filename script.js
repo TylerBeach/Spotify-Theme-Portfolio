@@ -213,10 +213,11 @@ function dropdownMenu() {
     } else {
         menu.style.display = "block";
         menu.style.position = "fixed";
-        menu.style.height = "100vh";
+        menu.style.height = "80vh";
         menu.style.marginTop = "5rem";
         menu.style.backgroundColor = "black";
         homeContainer.style.display = "none";
         menu.style.width = "100%";
+        menu.style.overflowY = "scroll";
     }
 }
