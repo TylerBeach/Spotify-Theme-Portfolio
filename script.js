@@ -193,3 +193,30 @@ function HidingContainers(chosenContainerID) {
 
 document.getElementById("backward-button").addEventListener("click", returnHome());
 
+
+
+
+function dropdownMenu() {
+    var menu = document.getElementById("dropdown");
+    var techTools = document.getElementById("tech-tools");
+    var homeContainer = document.getElementById('home-container');
+    
+    console.log("Testing");
+    
+    // menu.style.display = "block";
+    // console.log(menu.style.marginLeft)
+    
+    if (menu.style.display == "block") {
+        menu.style.display = "none";
+        homeContainer.style.display = "flex";
+
+    } else {
+        menu.style.display = "block";
+        menu.style.position = "fixed";
+        menu.style.height = "100vh";
+        menu.style.marginTop = "5rem";
+        menu.style.backgroundColor = "black";
+        homeContainer.style.display = "none";
+        menu.style.width = "100%";
+    }
+}
