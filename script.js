@@ -165,11 +165,19 @@ function returnHome () {
     var homeContainer = document.getElementById('home-container');
     var aboutMeContainer = document.getElementById('about-me-container');
     var contactMeContainer = document.getElementById('contact-me-container'); 
+    var sectionTwoContainer = document.getElementById('section-two-container');
+    var firesafeContainer = document.getElementById('firesafe-container');
+    var froggyJumperContainer = document.getElementById('froggy-jumper-container');
+    var spotifyPortfolioContainer = document.getElementById('spotify-portfolio-container');
 
 
     homeContainer.style.display = "flex";
     aboutMeContainer.style.display = "none";
     contactMeContainer.style.display = "none";
+    sectionTwoContainer.style.display = "none";
+    firesafeContainer.style.display = "none";
+    froggyJumperContainer.style.display = "none";
+    spotifyPortfolioContainer.style.display = "none";
 }
 
 function HidingContainers(chosenContainerID) {
@@ -185,27 +193,3 @@ function HidingContainers(chosenContainerID) {
 
 document.getElementById("backward-button").addEventListener("click", returnHome());
 
-
-function contactMenu() {
-    var contactsDiv = document.getElementById("contact-menu");
-    var spotifyDiv = document.getElementById("spotify-menu");
-    
-    if (contactsDiv.style.display == "none") {
-        contactsDiv.style.display = "flex";
-        // spotifyDiv.style.display = "none";
-    } else {
-        contactsDiv.style.display = "none";
-    }
-}    
-
-function spotifyMenu() {
-    var contactsDiv = document.getElementById("contact-menu");
-    var spotifyDiv = document.getElementById("spotify-menu");
-
-    if (spotifyDiv.style.display == "none") {
-        spotifyDiv.style.display = "block";
-        // contactsDiv.style.display = "none";
-    } else {
-        spotifyDiv.style.display = "none";
-    }
-}   

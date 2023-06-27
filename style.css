@@ -52,20 +52,21 @@ HERE ARE ALL THE BUTTON DIVS
 */
 
 
-.about-me, .contact-me{
+.about-me, .section-two, .contact-me, .firesafe, .froggy-jumper, .spotify-portfolio{
     display: none;
     flex-direction: row;
-    height: 200px;
+    height: auto;
     margin-left: 300px;
     margin-bottom: 0.5rem;
     padding-bottom: 87px;
-    width: 100%px;
+    width: auto;
 }
 
 .image-and-title {
     padding-top: 2.1rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
 
 }
@@ -79,6 +80,7 @@ HERE ARE ALL THE BUTTON DIVS
 .image-and-title-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: baseline;
     align-items: flex-start;
     text-align: start;
@@ -86,6 +88,7 @@ HERE ARE ALL THE BUTTON DIVS
 
 .image-and-title-text h1 {
     margin-top: 2.2rem;
+    font-size: 8em;
 }
 
 
@@ -99,13 +102,33 @@ HERE ARE ALL THE BUTTON DIVS
     border-radius: 1rem;
 }
 
-.about-me h1, .contact-me h1 {
-    font-size: 8rem;
+.about-me-info img {
+    padding: 2rem;
+    height: auto;
+    width: 500px;
 }
 
-.contact-me {
-    display: none;
+.video-images {
+    display: flex;
+    flex-direction: row;
 }
+
+.video-images img {
+    width: 50%;
+    padding: 2rem;
+}
+
+.made-with img {
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+/* .contact-me {
+    display: none;
+} */
 
 .main-container {
     display: flex;
@@ -131,10 +154,7 @@ LEFT UI
 
 
 .left-menu {
-    /* overflow: scroll;
     overflow-y: scroll;
-    scrollbar-color: #121212 #212121;
-    scrollbar-width: 0px; */
     top: 0;
     position: fixed;
     left: 0;
@@ -148,8 +168,12 @@ LEFT UI
     
 }
 
+.left-menu a { 
+    text-decoration: none;
+}
+
 .left-menu-container {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     max-height: 100%;
 
 }
@@ -277,6 +301,11 @@ LEFT UI
     background-color: #272727;
 }
 
+.history a:hover {
+    background-color: #272727;
+
+}
+
 .right-menu {
     width: 86vmax;
     height: fit-content;
@@ -289,6 +318,11 @@ LEFT UI
     margin-right: 0.5rem;
     margin-top: 0.5rem;
     padding-bottom: 1rem;
+}
+
+.right-menu p {
+    font-size: 20px;
+    font-family: ThinSpotify;
 }
 
 /* HEADER THINGS  */
@@ -501,6 +535,7 @@ LEFT UI
 
 
 .genre-container {
+    position: sticky;
     display: flex;
     column-gap: 1rem;
     row-gap: 0rem;
@@ -518,6 +553,7 @@ LEFT UI
 }
 
 .genre {
+    position: sticky;
     text-align: center;
     width: 400px;
     height: auto;
@@ -790,7 +826,7 @@ MEDIA QUERIES ARE HERE
         display: none;
     }
 
-    .about-me, .contact-me {
+    .about-me, .section-two, .contact-me, .firesafe, .froggy-jumper, .spotify-portfolio {
         width: 100vw;
         margin-left: 0px;
         margin-right: 0px;
@@ -801,22 +837,49 @@ MEDIA QUERIES ARE HERE
     .image-and-title {
         margin-top: 3rem;
     }
+
+    .image-and-title img {
+        /* margin: auto; */
+        height: 100px;
+        width: 100px;
+    }
+
+    .video-images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .video-images img {
+        width: 80%;
+        height: auto;
+        padding: none;
+    }
+
+    .made-with {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .right-menu {
         justify-self: left;
         margin-left: none;
     }
 
-    .right-menu img {
-        height: 100px;
-        width: 100px;
-    }
+    
 
     .image-and-title-text h1 {
         font-size: 40px;
         margin-top: 1rem;
     }
 
-
+    .about-me-info img {
+        padding: 2rem;
+        height: auto;
+        width: 80%;
+    }
 
 
 
