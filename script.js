@@ -198,9 +198,17 @@ document.getElementById("backward-button").addEventListener("click", returnHome(
 
 
 function dropdownMenu() {
+    //* I am going to end it all !1!1!!!1! this function sucks weiner 
+    
     var menu = document.getElementById("dropdown");
     var techTools = document.getElementById("tech-tools");
     var homeContainer = document.getElementById('home-container');
+    var aboutMeContainer = document.getElementById('about-me-container');
+    var contactMeContainer = document.getElementById('contact-me-container'); 
+    var sectionTwoContainer = document.getElementById('section-two-container');
+    var firesafeContainer = document.getElementById('firesafe-container');
+    var froggyJumperContainer = document.getElementById('froggy-jumper-container');
+    var spotifyPortfolioContainer = document.getElementById('spotify-portfolio-container');
     
     
     if (menu.style.display == "block") {
@@ -221,6 +229,14 @@ function dropdownMenu() {
     if (homeContainer.style.display == "flex") {
         homeContainer.style.display = "none";
     } else {
-        homeContainer.style.display = "flex";
-    }
+        if (aboutMeContainer.style.display == "none" &&
+            contactMeContainer.style.display == "none" &&
+            sectionTwoContainer.style.display == "none" &&
+            firesafeContainer.style.display == "none" &&
+            froggyJumperContainer.style.display == "none" &&
+            spotifyPortfolioContainer.style.display == "none") {
+                homeContainer.style.display = "flex";
+            }
+    };
+
 }
