@@ -182,6 +182,11 @@ LEFT UI
     display: none;
 } 
 
+.dropdown img{
+    background-color: #272727;
+    border-radius: 0.5rem;
+}
+
 .top-container {
     background-color: #121212;
     margin: 0.5rem;
@@ -817,7 +822,7 @@ MEDIA QUERIES ARE HERE
     }
 
     .top-container {
-        justify-content: space-around;
+        justify-content: left;
         flex-direction: row;
         padding-left: 0;
         padding-top: 1rem;
@@ -831,10 +836,21 @@ MEDIA QUERIES ARE HERE
     .dropdown {
         display: flex;
         margin-top: 0rem;
-        justify-self: left;
         align-items: center;
+        /* justify-content: left; */
+        margin-left: 1rem;
+        margin-right: 6rem;
     }
 
+
+
+    .home {
+        width: 50%;
+    }
+
+    .search {
+        display: none;
+    }
 
     .spotify-container {
         display: block;

@@ -213,8 +213,9 @@ function dropdownMenu() {
     } else {
         menu.style.display = "block";
         // menu.style.position = "fixed";
-        menu.style.height = "160vh";
+        menu.style.height = "auto";
         menu.style.marginTop = "5rem";
+        menu.style.paddingBottom = "6rem"
         menu.style.backgroundColor = "black";
         homeContainer.style.display = "none";
         menu.style.width = "100%";
