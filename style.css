@@ -979,6 +979,9 @@ MEDIA QUERIES ARE HERE
     .red-heart {
         scale: 3;
         padding-left: 1rem;
+    }
 
+    .dropdown-menu {
+        display: none;
     }
 }

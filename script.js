@@ -213,8 +213,10 @@ function dropdownMenu() {
     
     if (menu.style.display == "block") {
         menu.style.display = "none";
+        techTools.style.display = "flex";
 
     } else {
+        techTools.style.display = "none";
         menu.style.display = "block";
         menu.style.position = "fixed";
         menu.style.height = "auto";
