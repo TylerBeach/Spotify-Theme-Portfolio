@@ -202,24 +202,25 @@ function dropdownMenu() {
     var techTools = document.getElementById("tech-tools");
     var homeContainer = document.getElementById('home-container');
     
-    console.log("Testing");
-    
-    // menu.style.display = "block";
-    // console.log(menu.style.marginLeft)
     
     if (menu.style.display == "block") {
-        homeContainer.style.display = "flex";
         menu.style.display = "none";
 
     } else {
-        homeContainer.style.display = "none";
         menu.style.display = "block";
-        // menu.style.position = "fixed";
-        menu.style.height = "fit-content";
-        menu.style.marginTop = "5rem";
+        menu.style.position = "fixed";
+        menu.style.height = "auto";
+        menu.style.marginTop = "4rem";
         menu.style.paddingBottom = "6rem"
         menu.style.backgroundColor = "black";
-        menu.style.width = "auto";
+        menu.style.width = "100%";
         menu.style.overflowY = "scroll";
+        menu.style.top = "0";
+    }
+
+    if (homeContainer.style.display == "flex") {
+        homeContainer.style.display = "none";
+    } else {
+        homeContainer.style.display = "flex";
     }
 }
