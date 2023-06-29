@@ -208,18 +208,18 @@ function dropdownMenu() {
     // console.log(menu.style.marginLeft)
     
     if (menu.style.display == "block") {
-        menu.style.display = "none";
         homeContainer.style.display = "flex";
+        menu.style.display = "none";
 
     } else {
+        homeContainer.style.display = "none";
         menu.style.display = "block";
         // menu.style.position = "fixed";
-        menu.style.height = "auto";
+        menu.style.height = "fit-content";
         menu.style.marginTop = "5rem";
         menu.style.paddingBottom = "6rem"
         menu.style.backgroundColor = "black";
-        homeContainer.style.display = "none";
-        menu.style.width = "100vw";
+        menu.style.width = "auto";
         menu.style.overflowY = "scroll";
     }
 }
