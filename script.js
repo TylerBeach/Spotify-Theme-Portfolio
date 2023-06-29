@@ -219,7 +219,7 @@ function dropdownMenu() {
         menu.style.paddingBottom = "6rem"
         menu.style.backgroundColor = "black";
         homeContainer.style.display = "none";
-        menu.style.width = "100%";
+        menu.style.width = "100vw";
         menu.style.overflowY = "scroll";
     }
 }
