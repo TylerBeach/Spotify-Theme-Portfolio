@@ -169,7 +169,7 @@ function returnHome () {
     var firesafeContainer = document.getElementById('firesafe-container');
     var froggyJumperContainer = document.getElementById('froggy-jumper-container');
     var spotifyPortfolioContainer = document.getElementById('spotify-portfolio-container');
-
+    var dropdownContainer = document.getElementById('dropdown');
 
     homeContainer.style.display = "flex";
     aboutMeContainer.style.display = "none";
@@ -178,6 +178,7 @@ function returnHome () {
     firesafeContainer.style.display = "none";
     froggyJumperContainer.style.display = "none";
     spotifyPortfolioContainer.style.display = "none";
+    dropdownContainer.style.display = "none";
 }
 
 function HidingContainers(chosenContainerID) {
