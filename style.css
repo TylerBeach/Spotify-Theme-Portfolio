@@ -958,6 +958,7 @@ MEDIA QUERIES ARE HERE
     }
 
     .buttons {
+        display: none;
         width: 200px;
         justify-content: space-between;
         padding-left: 2rem;
@@ -971,4 +972,13 @@ MEDIA QUERIES ARE HERE
         margin: 1rem;
     }
 
+    .grey-heart{
+        scale: 1.5;
+        padding-left: 1.55rem;
+    }
+    .red-heart {
+        scale: 3;
+        padding-left: 1rem;
+
+    }
 }
