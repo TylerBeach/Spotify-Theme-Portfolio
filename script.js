@@ -212,7 +212,6 @@ function dropdownMenu() {
     var froggyJumperContainer = document.getElementById('froggy-jumper-container');
     var spotifyPortfolioContainer = document.getElementById('spotify-portfolio-container');
     
-    
     if (menu.style.display == "block") {
         menu.style.display = "none";
         techTools.style.display = "flex";
@@ -220,15 +219,18 @@ function dropdownMenu() {
     } else {
         techTools.style.display = "none";
         menu.style.display = "block";
-        menu.style.position = "fixed";
-        menu.style.height = "auto";
+        menu.style.position = "sticky";
+        menu.style.height = "fit-content";
         menu.style.marginTop = "4.5rem";
-        menu.style.marginBottom = "15rem"
-        menu.style.paddingBottom = "15rem"
+        // menu.style.marginBottom = "16rem"
+        menu.style.paddingBottom = "17rem"
         menu.style.backgroundColor = "black";
         menu.style.width = "100%";
         menu.style.overflowY = "scroll";
-        menu.style.top = "0";
+        menu.style.top = "4.5rem";
+        // menu.scrollTop = 0;
+        menu.scrollIntoView();
+
     }
 
     if (homeContainer.style.display == "flex") {
