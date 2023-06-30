@@ -221,9 +221,9 @@ function dropdownMenu() {
         menu.style.display = "block";
         menu.style.position = "sticky";
         menu.style.height = "fit-content";
-        menu.style.marginTop = "4.5rem";
+        // menu.style.marginTop = "4.5rem";
         // menu.style.marginBottom = "16rem"
-        menu.style.paddingBottom = "17rem"
+        menu.style.paddingBottom = "8rem"
         menu.style.backgroundColor = "black";
         menu.style.width = "100%";
         menu.style.overflowY = "scroll";
