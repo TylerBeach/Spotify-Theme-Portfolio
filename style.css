@@ -69,7 +69,12 @@ HERE ARE ALL THE BUTTON DIVS
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: left;
+    text-align: baseline;
+}
 
+.image-and-title div {
+    align-items: baseline;
+    justify-content: baseline;
 }
 
 .image-and-title img {
@@ -297,10 +302,6 @@ LEFT UI
     display: none;
 } 
 
-.dropdown img{
-    background-color: #272727;
-    border-radius: 0.5rem;
-}
 
 .top-container {
     background-color: #121212;
@@ -956,16 +957,17 @@ MEDIA QUERIES ARE HERE
         margin-left: 0rem;
         padding: 0;
         margin-bottom: 9rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         width: 100vw;
         height: auto;
+        padding-top: 1rem;
     }
 
     .left-menu {
         position: fixed;
         height: auto;
         margin-top: 0rem;
-        /* padding-bottom: 2rem; */
+        /* margin-bottom: 2rem; */
         min-height: 0px;
         width: 100vw;
         background: none;
@@ -974,7 +976,7 @@ MEDIA QUERIES ARE HERE
     }
 
     .top-container {
-        justify-content: left;
+        justify-content: space-between;
         flex-direction: row;
         padding-left: 0;
         padding-top: 1rem;
@@ -983,6 +985,8 @@ MEDIA QUERIES ARE HERE
         margin: 0;
         margin-right: 0rem;
         margin-left: 0rem;
+        /* background-color: #272727; */
+        /* border-top-left-radius: 0; */
     }
 
     .dropdown {
@@ -991,13 +995,25 @@ MEDIA QUERIES ARE HERE
         align-items: center;
         /* justify-content: left; */
         margin-left: 1rem;
-        margin-right: 6rem;
+        margin-right: 1rem;
+    }
+    
+    .dropdown img{
+        background-color: #212121;
+        border-radius: 0.5rem;
     }
 
 
 
     .home {
-        width: 50%;
+        width: fit-content;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background-color: #212121;
+        border-radius: 0.5rem;
+    }
+    .home h3 {
+        display: none;
     }
 
     .search {
@@ -1036,9 +1052,10 @@ MEDIA QUERIES ARE HERE
     }
 
     .image-and-title img {
-        margin: auto;
+        margin: none;
         height: 100px;
         width: 100px;
+        padding-right: 1rem;
     } 
 
     
@@ -1061,11 +1078,12 @@ MEDIA QUERIES ARE HERE
 
     .image-and-title-text h1 {
         font-size: 35px;
-        margin-top: 1rem;
+        margin-top: 1.8rem;
         margin-bottom: 0rem;
     }
 
     .about-me-info img {
+
         padding: 2rem;
         height: auto;
         width: 80%;
@@ -1140,5 +1158,6 @@ MEDIA QUERIES ARE HERE
 
     .dropdown-menu {
         display: none;
+        /* margin-top: 3rem; */
     }
 }

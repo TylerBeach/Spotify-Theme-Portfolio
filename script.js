@@ -222,7 +222,7 @@ function dropdownMenu() {
         menu.style.display = "block";
         menu.style.position = "fixed";
         menu.style.height = "auto";
-        menu.style.marginTop = "4rem";
+        menu.style.marginTop = "4.5rem";
         menu.style.paddingBottom = "6rem"
         menu.style.backgroundColor = "black";
         menu.style.width = "100%";
