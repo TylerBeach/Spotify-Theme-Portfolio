@@ -204,6 +204,7 @@ function dropdownMenu() {
     
     var menu = document.getElementById("dropdown");
     var techTools = document.getElementById("tech-tools");
+    var techToolsTitle = document.getElementById("tech-tools-title");
     var homeContainer = document.getElementById('home-container');
     var aboutMeContainer = document.getElementById('about-me-container');
     var contactMeContainer = document.getElementById('contact-me-container'); 
@@ -215,20 +216,23 @@ function dropdownMenu() {
     if (menu.style.display == "block") {
         menu.style.display = "none";
         techTools.style.display = "flex";
+        // techToolsTitle.style.display = "flex";
 
     } else {
         techTools.style.display = "none";
+        // techToolsTitle.style.display = "none";
         menu.style.display = "block";
-        menu.style.position = "sticky";
+        menu.style.position = "sticky"; 
         menu.style.height = "fit-content";
         // menu.style.marginTop = "4.5rem";
         // menu.style.marginBottom = "16rem"
-        menu.style.paddingBottom = "8rem"
+        menu.style.paddingTop = "4.5rem"
+        menu.style.paddingBottom = "13rem"
         menu.style.backgroundColor = "black";
         menu.style.width = "100%";
         menu.style.overflowY = "scroll";
-        menu.style.top = "4.5rem";
-        // menu.scrollTop = 0;
+        menu.style.top = "0rem";
+        menu.scrollTop = 0;
         menu.scrollIntoView();
 
     }
@@ -243,6 +247,8 @@ function dropdownMenu() {
             froggyJumperContainer.style.display == "none" &&
             spotifyPortfolioContainer.style.display == "none") {
                 homeContainer.style.display = "flex";
+                homeContainer.scrollIntoView();
+
             }
     };
 
