@@ -221,7 +221,7 @@ function dropdownMenu() {
         techTools.style.display = "none";
         menu.style.display = "block";
         menu.style.position = "fixed";
-        menu.style.height = "auto";
+        menu.style.height = "100rem";
         menu.style.marginTop = "4.5rem";
         menu.style.paddingBottom = "8rem"
         menu.style.backgroundColor = "black";
