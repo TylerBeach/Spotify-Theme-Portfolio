@@ -18,6 +18,7 @@
     margin: 0;
     padding: 0;
     font-family: RegularSpotify;
+    text-decoration: none;
 }
 
 *::-webkit-scrollbar{
@@ -88,22 +89,42 @@ HERE ARE ALL THE BUTTON DIVS
 
 .image-and-title-text h1 {
     margin-top: 2.2rem;
-    font-size: 8em;
+    font-size: 95px;
 }
 
 
 
 .about-me-info {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #121212;
     border-radius: 1rem;
+    color: white;
+}
+
+.about-me-info ul {
+    text-decoration: none;
+    padding-left: 1rem;
+    /* list-style: none; */
+}
+.about-me-info ul li {
+    font-size: 20px;
+}
+
+.about-me-info div {
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.about-me-info h2, .about-me-info h3, .about-me-info h4 {
+    font-family: ThinSpotify;
+    letter-spacing: 1px;
 }
 
 .about-me-info img {
-    padding: 2rem;
+    padding: 0rem;
     height: auto;
     width: 500px;
 }
@@ -123,12 +144,106 @@ HERE ARE ALL THE BUTTON DIVS
     height: auto;
 }
 
+.firesafe-tech {
+    margin-top: 0.5rem;
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-y: hidden !important;
+    margin-bottom: 1rem;
+    background-color: #212121;
+    border-radius: 0.5rem;
+    max-width: fit-content;
+    /* width:min-content !important; */
+}
 
+.firesafe-tech div {
+    background-color: #272727;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    row-gap: 0 !important;
+    width: fit-content !important;
+    /* font-family: RegularSpotify !important; */
+}
 
+.firesafe-tech img {
+    height: auto !important;
+    width: 100px !important;
+    padding: none !important;
+    margin: none !important;
+    padding: 1rem !important;
+    /* scale: 1.3; */
+}
+
+.firesafe-github {
+    width: fit-content;
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.firesafe a  {
+    text-decoration: none;
+    color: white;
+}
 
 /* .contact-me {
     display: none;
 } */
+.froggy-menu-flex {
+    display: flex;
+    flex-direction: row !important;
+    column-gap: 2rem;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    width: auto;
+    max-width: min-content;
+    margin-bottom: 2rem;
+}
+
+.froggy-menu-flex div h1 {
+    width: fit-content;
+}
+
+.froggy-jumper-tech {
+    /* margin-top: 1rem; */
+    display: flex !important;
+    flex-direction: row !important;
+    text-align: center;
+    background-color: #212121;
+    border-radius: 0.5rem;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+    max-width: min-content;
+}
+
+.froggy-jumper-tech div {
+    height: fit-content;
+    background-color: #272727;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.froggy-jumper-tech div h2 {
+    padding-bottom: 0.5rem;
+}
+
+.froggy-jumper-tech img {
+    width: auto !important;
+    height: 100px !important;
+}
+
+.froggy-jumper-demo {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    column-gap: 4rem;
+}
+
+
+
 
 .main-container {
     display: flex;
@@ -481,7 +596,11 @@ LEFT UI
     margin-bottom: 1rem;
 }
 
-/* PLAYLIST THIGNS */
+
+
+
+
+/* TOP 3 CONTAINERS */
 
 .playlist-container {
     display: grid;
@@ -660,7 +779,6 @@ footer {
 
 }
 
-
 .controls {
     margin-right: 8rem;
     width: 100%;
@@ -724,7 +842,6 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-
 .volume {
     margin-left: 3rem;
     margin-right: 3.4rem;
@@ -744,7 +861,10 @@ footer {
     margin-top: -1rem;
 }
 
+
+
 /* 
+
 
 MEDIA QUERIES ARE HERE
 
@@ -759,6 +879,19 @@ MEDIA QUERIES ARE HERE
     .left-menu-container {
         display: block;
     }
+    .image-and-title img {
+        width: 170px;
+        height: auto;
+    }
+    .image-and-title-text h1 {
+        font-size: 65px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .froggy-menu-flex {
+        flex-wrap: wrap;
+    }
+
 }
 
 
@@ -792,6 +925,25 @@ MEDIA QUERIES ARE HERE
 
     .banner, .header    {
         display: flex;
+    }
+    
+    .froggy-jumper-tech {
+        width: 100%;
+        min-width: fit-content;
+
+    }
+
+    .firesafe-github {
+        width: auto;
+    }
+    .image-and-title img {
+        width: 150px;
+        height: auto;
+    }
+    .image-and-title-text h1 {
+        font-size: 40px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -880,26 +1032,18 @@ MEDIA QUERIES ARE HERE
     
     .image-and-title {
         margin-top: 3rem;
+        flex-wrap: nowrap;
     }
 
     .image-and-title img {
-        /* margin: auto; */
+        margin: auto;
         height: 100px;
         width: 100px;
-    }
+    } 
 
-    .video-images {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
+    
 
-    .video-images img {
-        width: 80%;
-        height: auto;
-        padding: none;
-    }
+    
 
     .made-with {
         display: flex;
@@ -916,8 +1060,9 @@ MEDIA QUERIES ARE HERE
     
 
     .image-and-title-text h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 1rem;
+        margin-bottom: 0rem;
     }
 
     .about-me-info img {
@@ -926,6 +1071,18 @@ MEDIA QUERIES ARE HERE
         width: 80%;
     }
 
+    .firesafe-github {
+        width: auto;
+    }
+    
+
+    .froggy-jumper-tech {
+        width: 100vw;
+        max-width: none;
+        min-width: none;
+
+        overflow-y: scroll;
+    }
 
 
 

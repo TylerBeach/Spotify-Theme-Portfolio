@@ -170,8 +170,10 @@ function returnHome () {
     var froggyJumperContainer = document.getElementById('froggy-jumper-container');
     var spotifyPortfolioContainer = document.getElementById('spotify-portfolio-container');
     var dropdownContainer = document.getElementById('dropdown');
+    var techTools = document.getElementById("tech-tools");
 
     homeContainer.style.display = "flex";
+    techTools.style.display = "flex";
     aboutMeContainer.style.display = "none";
     contactMeContainer.style.display = "none";
     sectionTwoContainer.style.display = "none";
