@@ -149,6 +149,22 @@ HERE ARE ALL THE BUTTON DIVS
     height: auto;
 }
 
+.firesafe-images {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row !important;
+    width: fit-content;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.firesafe-images img {
+    width: 45%;
+    min-width: 450px;
+}
+
+
 .firesafe-tech {
     margin-top: 0.5rem;
     display: flex !important;
@@ -892,6 +908,11 @@ MEDIA QUERIES ARE HERE
     .froggy-menu-flex {
         flex-wrap: wrap;
     }
+    .firesafe-images {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
 
 }
 
@@ -945,6 +966,16 @@ MEDIA QUERIES ARE HERE
         font-size: 40px;
         margin-top: 2rem;
         margin-bottom: 3rem;
+    }
+    .firesafe-images {
+        justify-content: center;
+        /* width: 100%; */
+        height: fit-content;
+        flex-direction: column;
+    }
+    .firesafe-images img {
+        min-width: 80%;
+        width: 100%;
     }
 }
 
@@ -1084,7 +1115,6 @@ MEDIA QUERIES ARE HERE
     }
 
     .about-me-info img {
-
         padding: 2rem;
         height: auto;
         width: 80%;
@@ -1094,6 +1124,19 @@ MEDIA QUERIES ARE HERE
         width: auto;
     }
     
+    .firesafe-images {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .firesafe-images img {
+        min-width: 80%;
+        width: 100%;
+        column-gap: 0rem;
+        padding: 0rem;
+    }
+
 
     .froggy-jumper-tech {
         width: 100vw;
@@ -1103,6 +1146,7 @@ MEDIA QUERIES ARE HERE
         overflow-y: scroll;
     }
 
+    
 
 
 
