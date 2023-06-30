@@ -973,6 +973,7 @@ MEDIA QUERIES ARE HERE
         background: none;
         padding: 0px;
         margin: 0px;
+        top: 0;
     }
 
     .top-container {
@@ -997,7 +998,7 @@ MEDIA QUERIES ARE HERE
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
+
     .dropdown img{
         background-color: #212121;
         border-radius: 0.5rem;
