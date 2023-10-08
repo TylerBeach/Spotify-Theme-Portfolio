@@ -1,3 +1,5 @@
 # Spotify Themed Portfolio
+#### Made with vanilla javascript, html5 and css
 
-## React version in progress.........
+
+## Currently working on a React version of this site
